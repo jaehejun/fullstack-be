@@ -16,3 +16,8 @@ spring:
       ddl-auto: update  # ?? create / create-drop
     show-sql: true
     database-platform: org.hibernate.dialect.H2Dialect
+
+#시큐리티 관련 로그 확인을 위해 로그 레벨을 낮게 설정
+logging:
+  level:
+    org.springframework.security.web: trace
